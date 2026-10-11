@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Recensione · Nascolor Sagl</title>
+<meta name="robots" content="noindex">
+<style>
+@font-face{font-family:"Archivo";src:url(/fonts/archivo.woff2) format("woff2");font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible";src:url(/fonts/atkinson-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible";src:url(/fonts/atkinson-700.woff2) format("woff2");font-weight:700;font-display:swap}
+:root{--bg:#F3F4F1;--ink:#18232B;--muted:#56626B;--line:#D6DAD4;--accent:#DCA02A}
+@media (prefers-color-scheme: dark){:root{--bg:#11181D;--ink:#E9EDE9;--muted:#9DA9B0;--line:#2C3841;--accent:#F0B53A;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif}
+.wrap{max-width:720px;margin-inline:auto;padding-inline:20px;padding-block:32px 64px}
+a{color:inherit}
+.back{display:inline-block;font-weight:700;text-decoration:none;margin-bottom:32px}
+.back:hover{color:var(--muted)}
+h1,h2{font-family:"Archivo","Arial Narrow",Arial,sans-serif;font-stretch:118%;line-height:1.1;margin:0;text-wrap:balance}
+h1{font-size:clamp(2rem,6vw,2.8rem);font-weight:800}
+h2{font-size:1.2rem;font-weight:700;margin-top:32px;padding-top:20px;border-top:1px solid var(--line)}
+p,ul{margin:12px 0 0;color:var(--muted)}
+p strong{color:var(--ink)}
+.date{font-size:.9rem;margin-top:8px}
+[hidden]{display:none!important}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:420px;margin-top:24px;padding:16px 20px;border-radius:8px;font-weight:700;font-size:1.05rem;text-decoration:none}
+.g{background:var(--accent);color:#1F3A3D}.w{background:#1F8F55;color:#fff}
+.stars{font-size:2rem;letter-spacing:4px;color:var(--accent);margin-top:20px}
+.other{margin-top:28px;font-size:.95rem}
+.dots{display:flex;gap:4px;margin-bottom:24px}.dots i{width:10px;height:26px;border-radius:2px;display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="dots" aria-hidden="true"><i style="background:#C9733E"></i><i style="background:#DCA02A"></i><i style="background:#6F8F8A"></i></span>
+  <h1>Grazie per aver scelto Nascolor</h1>
+  <p class="stars" aria-hidden="true">★★★★★</p>
+  <p>Se sei soddisfatto del lavoro, una recensione ci aiuta moltissimo: altre famiglie e amministrazioni ci trovano anche grazie a te. Ci vogliono 30 secondi.</p>
+  <a class="btn g" id="g" href="#" hidden>Lascia una recensione su Google</a>
+  <a class="btn w" id="w" href="https://wa.me/41798901135?text=Buongiorno%2C%20vi%20scrivo%20com%27%C3%A8%20andato%20il%20lavoro%3A%20" target="_blank" rel="noopener">Scrivici com'è andata su WhatsApp</a>
+  <p class="other" lang="de">Danke für Ihr Vertrauen! Eine kurze Bewertung hilft uns sehr.</p>
+  <p class="other" lang="fr" style="margin-top:6px">Merci de votre confiance ! Un petit avis nous aide beaucoup.</p>
+  <p class="other"><a href="/">nascolorsagl.ch</a> · <a href="tel:+41798901135">079 890 11 35</a></p>
+</div>
+<script>
+/* Quando la scheda Google di Nascolor è attiva, incolla qui il link "Chiedi recensioni"
+   (es. https://g.page/r/XXXXXXXX/review). Il QR stampato non cambia mai. */
+var GOOGLE_REVIEW_URL = "";
+if (GOOGLE_REVIEW_URL) {
+  var g = document.getElementById('g'); g.href = GOOGLE_REVIEW_URL; g.hidden = false;
+  document.getElementById('w').classList.remove('w'); document.getElementById('w').style.cssText = "border:2px solid currentColor";
+  setTimeout(function(){ location.href = GOOGLE_REVIEW_URL; }, 1500);
+}
+</script>
+</body>
+</html>
