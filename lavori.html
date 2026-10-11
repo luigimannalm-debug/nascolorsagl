@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lavori realizzati · Nascolor Sagl</title>
+<meta name="description" content="Lavori realizzati da Nascolor Sagl: pittura, facciate, resine, cartongesso e gessatura in Ticino e in Svizzera, con foto prima e dopo.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1F3A3D">
+<link rel="canonical" href="https://nascolorsagl.ch/lavori.html">
+<link rel="preload" href="/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Archivo";src:url(/fonts/archivo.woff2) format("woff2");font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible";src:url(/fonts/atkinson-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible";src:url(/fonts/atkinson-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:url(/fonts/plexmono-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:url(/fonts/plexmono-500.woff2) format("woff2");font-weight:500;font-display:swap}
+/* Layout: hero con facciata ticinese interattiva (prova colori) · fasce piene alternate · modulo guidato in chiusura · barra fissa su telefono */
+:root{
+  --bg:#F3F4F1; --surface:#FFFFFF; --ink:#18232B; --muted:#56626B; --line:#D6DAD4;
+  --accent:#DCA02A; --accent-ink:#18232B; --band:#1F3A3D; --band-ink:#EEF1EC; --ok:#2E7D4F; --warn:#B4442C;
+  --roof:#8E4A2F; --glass:#C9D6DA;
+  --f-display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --r:6px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#11181D; --surface:#18222A; --ink:#E9EDE9; --muted:#9DA9B0; --line:#2C3841;
+    --accent:#F0B53A; --accent-ink:#11181D; --band:#163033; --band-ink:#E9EDE9; --ok:#5CC08A; --warn:#E07A5F;
+    --glass:#5C6E74; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#11181D; --surface:#18222A; --ink:#E9EDE9; --muted:#9DA9B0; --line:#2C3841;
+  --accent:#F0B53A; --accent-ink:#11181D; --band:#163033; --band-ink:#E9EDE9; --ok:#5CC08A; --warn:#E07A5F;
+  --glass:#5C6E74; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%}
+a{color:inherit}
+[hidden]{display:none!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1140px;margin-inline:auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--f-display);font-stretch:118%;line-height:1.04;margin:0;text-wrap:balance}
+h2{font-size:clamp(1.9rem,4.6vw,3rem);font-weight:800;letter-spacing:-.01em}
+h3{font-size:1.2rem;font-weight:700}
+p{margin:0}
+.eyebrow{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:var(--r);padding:13px 22px;font:700 1rem var(--f-body);cursor:pointer;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s}
+.btn-accent{background:var(--accent);color:var(--accent-ink)}
+.btn-accent:hover{transform:translateY(-1px);box-shadow:0 4px 0 color-mix(in srgb,var(--ink) 25%,transparent)}
+.btn-ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--bg)}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo b{font-family:var(--f-display);font-stretch:125%;font-weight:900;font-size:1.3rem;letter-spacing:.02em}
+.logo .dots{display:flex;gap:3px}
+.logo .dots i{width:9px;height:22px;border-radius:2px;display:block}
+nav.links{display:flex;gap:24px;align-items:center}
+nav.links a{text-decoration:none;font-weight:700;font-size:.95rem}
+nav.links a:not(.btn):hover{color:var(--muted)}
+@media (max-width:820px){nav.links .hide-s{display:none}}
+
+
+
+section{padding-block:80px}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:40px}
+.head p{max-width:48ch;color:var(--muted)}
+.band{background:var(--band);color:var(--band-ink)}
+.band .eyebrow,.band .head p{color:color-mix(in srgb,var(--band-ink) 70%,transparent)}
+
+
+/* hero con foto */
+.hero{position:relative;padding:0;color:#fff;background:#1F3A3D}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,22,27,.86) 0%,rgba(14,22,27,.62) 55%,rgba(14,22,27,.35) 100%)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .85fr;gap:48px;align-items:center;padding-block:96px 96px}
+.hero .eyebrow{color:rgba(255,255,255,.8)}
+.hero h1{font-size:clamp(2.5rem,6.4vw,4.8rem);font-weight:900;letter-spacing:-.02em;color:#fff}
+.hero h1 em{font-style:normal;color:#F0B53A}
+.hero .lead{margin-top:20px;font-size:1.18rem;max-width:40ch;color:rgba(255,255,255,.88)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .btn-ghost{color:#fff;border-color:#fff}
+.hero .btn-ghost:hover{background:#fff;color:#18232B}
+.quick{background:var(--surface);color:var(--ink);border-radius:10px;padding:24px;display:flex;flex-direction:column;gap:12px;box-shadow:0 20px 50px rgba(0,0,0,.3);min-width:0}
+.quick h2{font-size:1.45rem}
+.quick p{color:var(--muted);font-size:.93rem}
+.quick input,.quick select{font:400 1rem var(--f-body);padding:11px 12px;border:1.5px solid var(--line);border-radius:var(--r);background:var(--bg);color:var(--ink);width:100%}
+.quick .btn{width:100%}
+.quick .status{grid-column:auto}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr;padding-block:64px 48px;gap:32px}.hero::after{background:rgba(14,22,27,.72)}}
+/* barra fiducia */
+.trust{background:var(--surface);border-bottom:1px solid var(--line)}
+.trust ul{list-style:none;margin:0;padding-block:22px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.trust li{display:flex;gap:10px;align-items:center;font-weight:700;font-size:.95rem}
+.trust li::before{content:"";width:10px;height:10px;background:var(--accent);border-radius:2px;flex:none}
+@media (max-width:860px){.trust ul{grid-template-columns:1fr 1fr}}
+@media (max-width:420px){.trust ul{grid-template-columns:1fr}}
+/* card servizi con foto */
+.svc .ph{aspect-ratio:4/3;width:100%;object-fit:cover;display:block;background:var(--line)}
+/* perché con foto */
+.why-split{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+.why-split img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:10px;background:var(--line)}
+.why-list{display:flex;flex-direction:column;gap:0;border-top:2px solid var(--ink);margin-top:28px}
+.why-list > div{display:grid;grid-template-columns:56px 1fr;gap:4px 16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.why-list .k{font-family:var(--f-display);font-stretch:125%;font-weight:900;font-size:2rem;line-height:1;color:var(--accent);grid-row:span 2}
+.why-list p{color:var(--muted)}
+@media (max-width:860px){.why-split{grid-template-columns:1fr;gap:32px}.why-split img{aspect-ratio:16/10}}
+/* fascia cta */
+.cta-band{position:relative;color:#fff;padding-block:96px;background:#1F3A3D;overflow:hidden}
+.cta-band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cta-band::after{content:"";position:absolute;inset:0;background:rgba(14,22,27,.66)}
+.cta-band .wrap{position:relative;z-index:1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+.cta-band h2{color:#fff;max-width:18ch}
+.cta-band p{color:rgba(255,255,255,.85);margin-top:12px;max-width:44ch}
+.st-img{width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:8px;background:rgba(255,255,255,.08)}
+/* servizi */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);display:flex;flex-direction:column;min-width:0;overflow:hidden}
+.svc .swatch{height:92px;position:relative}
+.svc .swatch span{position:absolute;left:12px;bottom:10px;font-family:var(--f-mono);font-size:.7rem;background:var(--surface);color:var(--ink);padding:2px 7px;border-radius:3px}
+.svc .body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.svc p{color:var(--muted);font-size:.97rem}
+.svc ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:5px;font-size:.93rem}
+.svc li{padding-left:16px;position:relative}
+.svc li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:2px;background:var(--accent)}
+.svc .more{margin-top:auto;padding-top:10px;font-weight:700;font-size:.92rem;text-decoration:none;color:var(--ink);border-top:1px solid var(--line)}
+.svc .more:hover{color:var(--muted)}
+@media (max-width:980px){.services{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:540px){.services{grid-template-columns:1fr}}
+
+/* perché */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--ink)}
+.why > div{padding:26px 26px 26px 0;display:flex;flex-direction:column;gap:10px;min-width:0}
+.why > div + div{padding-left:26px;border-left:1px solid var(--line)}
+.why p{color:var(--muted)}
+.why .k{font-family:var(--f-display);font-stretch:125%;font-weight:900;font-size:2.2rem;line-height:1;color:var(--accent)}
+@media (max-width:860px){.why{grid-template-columns:1fr}.why > div,.why > div + div{padding:22px 0;border-left:0;border-bottom:1px solid var(--line)}}
+
+/* processo */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:0;margin:0;list-style:none}
+.step{padding:22px 22px 22px 0;border-top:2px solid var(--accent);display:flex;flex-direction:column;gap:8px;min-width:0}
+.step + .step{padding-left:22px;border-left:1px solid color-mix(in srgb,var(--band-ink) 18%,transparent)}
+.step .k{font-family:var(--f-mono);font-size:.8rem;color:var(--accent)}
+.step p{color:color-mix(in srgb,var(--band-ink) 78%,transparent);font-size:.96rem}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr}.step:nth-child(3){padding-left:0;border-left:0}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}.step,.step + .step{padding-left:0;border-left:0}}
+
+/* faq */
+.faq{display:grid;grid-template-columns:1fr 1.6fr;gap:48px;align-items:start}
+.faq-list{display:flex;flex-direction:column;border-top:2px solid var(--ink);min-width:0}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:18px 40px 18px 0;font-weight:700;font-size:1.05rem;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:12px;font-family:var(--f-display);font-size:1.6rem;font-weight:500;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 20px;color:var(--muted);max-width:62ch}
+@media (max-width:860px){.faq{grid-template-columns:1fr;gap:24px}}
+
+/* richiesta */
+.req-grid{display:grid;grid-template-columns:.9fr 1.3fr;gap:48px;align-items:start}
+.req-intro{display:flex;flex-direction:column;gap:18px}
+.req-intro p{color:color-mix(in srgb,var(--band-ink) 80%,transparent)}
+.req-intro ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px;counter-reset:r}
+.req-intro li{display:flex;gap:12px;align-items:baseline;counter-increment:r}
+.req-intro li::before{content:counter(r);font-family:var(--f-mono);font-size:.8rem;color:var(--accent);min-width:1.2em}
+form.req{color:var(--ink);background:var(--surface);border-radius:10px;padding:26px;display:grid;grid-template-columns:1fr 1fr;gap:18px 16px;min-width:0}
+form.req .full{grid-column:1/-1}
+.fld{display:flex;flex-direction:column;gap:7px;min-width:0}
+.fld > label,.fld > .lbl{font-weight:700;font-size:.92rem}
+.fld .opt{font-weight:400;color:var(--muted)}
+form.req input[type=text],form.req input[type=tel],form.req input[type=email],form.req input[type=number],form.req select,form.req textarea{font:400 1rem var(--f-body);padding:11px 12px;border:1.5px solid var(--line);border-radius:var(--r);background:var(--bg);color:var(--ink);width:100%}
+form.req textarea{min-height:110px;resize:vertical}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips label{border:1.5px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer;font-weight:700;font-size:.9rem;background:var(--bg)}
+.chips input:checked + label{border-color:var(--ink);background:var(--ink);color:var(--bg)}
+.chips input:focus-visible + label{outline:3px solid var(--accent);outline-offset:2px}
+.m2row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.m2row input[type=number]{width:120px}
+.m2row label{font-weight:400;font-size:.92rem;display:flex;gap:8px;align-items:center}
+.m2row input[type=checkbox]{width:18px;height:18px;accent-color:var(--accent)}
+.privacy{font-size:.82rem;color:var(--muted)}
+.status{grid-column:1/-1;border-left:4px solid var(--ok);padding:12px 14px;background:var(--bg);font-size:.95rem}
+.status.err{border-left-color:var(--warn)}
+@media (max-width:880px){.req-grid{grid-template-columns:1fr;gap:28px}}
+@media (max-width:520px){form.req{grid-template-columns:1fr;padding:20px}}
+
+footer{padding-block:32px 110px;font-size:.88rem;color:var(--muted);border-top:2px solid var(--ink)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer .mono{font-family:var(--f-mono);font-size:.8rem}
+@media (min-width:821px){footer{padding-bottom:40px}}
+
+/* barra fissa telefono */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(8px);border-top:1px solid var(--line);display:none}
+.mbar{gap:10px}.mbar .btn{flex:1}.mbar .btn-ghost{flex:0 0 auto;background:var(--surface)}
+.tel-link{font-family:var(--f-mono);font-size:.9rem}
+.lang{font-family:var(--f-mono);font-size:.85rem;border:1.5px solid var(--line);border-radius:4px;padding:3px 7px;text-decoration:none}
+.btn-wa{background:#1F8F55;color:#fff}.btn-wa:hover{background:#18784A}
+.mbar .btn-wa{flex:0 0 auto}
+.mbar .ic{flex:0 0 52px;padding:12px 0}
+@media (max-width:820px){.mbar{display:flex}}
+</style>
+<style>
+.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.mini{display:flex;flex-direction:column;gap:6px;padding:18px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);text-decoration:none;color:var(--ink)}
+.mini:hover{border-color:var(--ink)}
+.mini span{color:var(--muted);font-size:.93rem}
+.prose{max-width:68ch;display:flex;flex-direction:column;gap:16px}
+.prose p{color:var(--muted)}
+.prose h2{font-size:clamp(1.5rem,3.4vw,2.1rem);margin-top:12px}
+.hero .wrap{grid-template-columns:1fr}
+@media (max-width:860px){.mini-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.mini-grid{grid-template-columns:1fr}}
+
+/* barra superiore fissa ben visibile */
+header.top{background:#1F3A3D!important;color:#fff;border-bottom:0!important;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+header.top .logo b{color:#fff}
+header.top nav.links a{color:#fff}
+header.top nav.links a:not(.btn):hover{color:#F0B53A}
+header.top .lang{border-color:rgba(255,255,255,.5)}
+.hic{display:none;width:44px;height:44px;border-radius:8px;align-items:center;justify-content:center;text-decoration:none;flex:none}
+.hic.tel{background:#fff;color:#1F3A3D}.hic.wa{background:#1F8F55;color:#fff}
+@media (max-width:820px){
+  .hic{display:inline-flex}
+  .top .wrap{gap:8px;padding-block:10px}
+  nav.links{gap:8px}
+  header.top .logo b{font-size:1.05rem}
+  header.top .logo .dots i{width:7px;height:18px}
+  .mbar{display:none!important}
+}
+@media (max-width:360px){header.top .logo b{display:none}}
+@media (max-width:820px){
+  header.top nav.links a.hic.tel{color:#1F3A3D}
+  header.top nav.links .lang{display:none}
+  header.top nav.links .btn-accent{padding:10px 12px!important;font-size:.88rem!important}
+}
+
+
+/* barra superiore fissata allo schermo */
+header.top{position:fixed!important;top:0;left:0;right:0;z-index:100}
+body{padding-top:calc(64px + env(safe-area-inset-top,0px))}
+@media (max-width:820px){body{padding-top:calc(64px + env(safe-area-inset-top,0px))}}
+
+/* menu (tutte le misure) */
+.langs{display:inline-flex;gap:4px}
+.langs a,.mlang a{font-family:var(--f-mono);font-size:.82rem;font-weight:700;text-decoration:none;border:1.5px solid rgba(255,255,255,.45);border-radius:4px;padding:3px 7px;color:#fff}
+.langs a[aria-current],.mlang a[aria-current]{background:#F0B53A;border-color:#F0B53A;color:#1F3A3D}
+.mbtn{display:none;align-items:center;gap:8px;height:44px;padding:0 12px;border-radius:8px;border:0;background:#F0B53A;color:#1F3A3D;font:700 .95rem var(--f-display,system-ui);cursor:pointer;flex:none}
+.burger{display:inline-flex;flex-direction:column;gap:4px}.burger i{display:block;width:18px;height:2.5px;border-radius:2px;background:currentColor;transition:transform .2s,opacity .2s}
+.mbtn[aria-expanded="true"] .burger i:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.mbtn[aria-expanded="true"] .burger i:nth-child(2){opacity:0}
+.mbtn[aria-expanded="true"] .burger i:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mpanel{background:#1F3A3D;color:#fff;border-top:1px solid rgba(255,255,255,.15);max-height:calc(100vh - 64px);overflow:auto}
+.mpanel .wrap{display:block;padding-block:16px 24px}
+.mcta{display:flex;justify-content:center;width:100%;margin-bottom:8px}
+.mlist a{display:block;padding:14px 2px;border-bottom:1px solid rgba(255,255,255,.14);color:#fff;text-decoration:none;font-weight:700;font-size:1.08rem}
+.mtel{display:flex;align-items:center;gap:10px;margin-top:16px;color:#fff;text-decoration:none;font-family:var(--f-mono);font-size:1.05rem}
+.mlang{display:flex;align-items:center;gap:8px;margin-top:18px}.mlang span{opacity:.75;margin-right:4px;font-size:.9rem}
+.mlang a{font-size:.95rem;padding:7px 12px}
+@media (max-width:820px){
+  .mbtn{display:inline-flex}
+  header.top nav.links .cta-top{display:none}
+}
+@media (max-width:400px){.mbtn .mlbl{display:none}.mbtn{width:44px;justify-content:center;padding:0}}
+@media (min-width:821px){.mpanel{display:none}}
+.mh{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#F0B53A;margin:18px 0 2px}
+.mgrid{display:grid;grid-template-columns:1fr;gap:0 40px}
+[id]{scroll-margin-top:84px}
+@media (min-width:821px){.mbtn{display:inline-flex}.mpanel:not([hidden]){display:block!important}.mgrid{grid-template-columns:1.4fr 1fr}.mpanel .wrap{padding-block:8px 28px}.mcta{display:none}}
+nav.links a{white-space:nowrap}
+@media (max-width:1340px){nav.links .tel-link{display:none!important}}
+@media (min-width:821px) and (max-width:1060px){nav.links{gap:16px}nav.links a.hide-s:nth-child(2),nav.links a.hide-s:nth-child(4){display:none}}
+@media (max-width:360px){header.top .logo b{display:inline!important;font-size:.95rem}}
+@media (max-width:340px){header.top .logo b{display:none!important}}
+.hero h1,.hero .lead,.hero .eyebrow{overflow-wrap:break-word;hyphens:auto}
+.hero .wrap > *{min-width:0}
+
+.demo{margin-top:18px;padding:12px 16px;border-left:4px solid var(--accent);background:var(--surface);font-weight:700}
+.works{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+@media (max-width:760px){.works{grid-template-columns:1fr}}
+.work{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.ba{position:relative;aspect-ratio:4/3;overflow:hidden;touch-action:pan-y;user-select:none;cursor:ew-resize;background:#ddd}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba .before{clip-path:inset(0 calc(100% - var(--x,50%)) 0 0)}
+.ba .line{position:absolute;top:0;bottom:0;left:var(--x,50%);width:3px;background:#fff;transform:translateX(-50%);box-shadow:0 0 6px rgba(0,0,0,.4)}
+.ba .knob{position:absolute;top:50%;left:var(--x,50%);width:44px;height:44px;border-radius:50%;background:#fff;color:#1F3A3D;transform:translate(-50%,-50%);display:grid;place-items:center;font-weight:900;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+.ba .tag{position:absolute;top:12px;font-family:var(--f-mono);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;background:rgba(14,22,27,.75);color:#fff;padding:4px 8px;border-radius:4px}
+.ba .tag.b{left:12px}.ba .tag.a{right:12px}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.work .txt{padding:16px 18px 20px}
+.work h3{font-family:var(--f-display);font-stretch:112%;font-size:1.15rem;margin:0}
+.work .meta{font-family:var(--f-mono);font-size:.8rem;color:var(--muted);margin-top:4px}
+.work p{margin:10px 0 0;color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="/" aria-label="Nascolor, pagina iniziale"><span class="dots" aria-hidden="true"><i style="background:#C9733E"></i><i style="background:#DCA02A"></i><i style="background:#6F8F8A"></i></span><b>NASCOLOR</b></a>
+  <nav class="links" aria-label="Sezioni">
+      <a class="hide-s" href="/#servizi">Servizi</a><a class="hide-s" href="/#come">Come lavoriamo</a><a class="hide-s" href="/amministrazioni-condomini.html">Per amministrazioni</a><a class="hide-s" href="/#domande">Domande</a>
+      <a class="hide-s tel-link" href="tel:+41798901135">079 890 11 35</a>
+      <span class="langs hide-s"><a href="/" hreflang="it" lang="it" aria-current="true">IT</a><a href="/de/" hreflang="de" lang="de">DE</a><a href="/fr/" hreflang="fr" lang="fr">FR</a></span>
+      <a class="hic tel" href="tel:+41798901135" aria-label="Chiama"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg></a>
+      <a class="hic wa" href="https://wa.me/41798901135" target="_blank" rel="noopener" aria-label="WhatsApp"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6a2.5 2.5 0 0 0 1.7-1.2 2 2 0 0 0 .1-1.2c-.1-.1-.2-.1-.4-.2z"/></svg></a>
+      <a class="btn btn-accent cta-top" href="/#richiesta" style="padding:9px 16px;font-size:.92rem;white-space:nowrap">Sopralluogo</a>
+      <button class="mbtn" type="button" aria-expanded="false" aria-controls="mpanel" data-open="Menu" data-close="Chiudi"><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span><span class="mlbl">Menu</span></button>
+    </nav>
+  </div>
+  <div class="mpanel" id="mpanel" hidden>
+    <div class="wrap">
+      <a class="btn btn-accent mcta" href="/#richiesta">Programma il sopralluogo</a>
+      <div class="mgrid"><div><p class="mh">Servizi</p><div class="mlist"><a href="/#pittura">Opere di pittura interne</a><a href="/#facciate">Facciate</a><a href="/resine-bagni-ticino.html">Resine per bagni e pavimenti</a><a href="/#cartongesso">Cartongesso</a><a href="/#gessatura">Gessatura</a><a href="/#edili">Isolazioni</a><a href="/#edili">Lavori edili e demolizioni</a></div></div><div><p class="mh">Azienda</p><div class="mlist"><a href="/amministrazioni-condomini.html">Per amministrazioni immobiliari</a><a href="/#come">Come lavoriamo</a><a href="/#domande">Domande frequenti</a></div></div></div>
+      <a class="mtel" href="tel:+41798901135"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg> 079 890 11 35</a>
+      <div class="mlang"><span>Lingua</span><a href="/" hreflang="it" lang="it" aria-current="true">IT</a><a href="/de/" hreflang="de" lang="de">DE</a><a href="/fr/" hreflang="fr" lang="fr">FR</a></div>
+    </div></header>
+<main>
+  <section style="padding-bottom:24px"><div class="wrap">
+    <p class="eyebrow">Lavori realizzati</p>
+    <h1 style="margin-top:14px;font-size:clamp(2.2rem,6vw,3.6rem)">Il nostro lavoro, <em>prima e dopo</em>.</h1>
+    <p class="lead" style="max-width:60ch;margin-top:16px">Trascina la linea su ogni foto per vedere com'era prima e com'è dopo il nostro intervento.</p>
+    <p class="demo" id="demo">Anteprima: le immagini qui sotto sono esempi. Verranno sostituite con le foto dei cantieri Nascolor.</p>
+  </div></section>
+  <section style="padding-top:0"><div class="wrap"><div class="works" id="works"></div></div></section>
+  <div class="cta-band">
+    <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=2000&q=75" alt="" loading="lazy">
+    <div class="wrap"><div><h2>Hai un lavoro simile?</h2><p>Vediamo il lavoro sul posto e ti diamo il preventivo scritto.</p></div>
+    <a class="btn btn-accent" href="/#richiesta">Programma il sopralluogo</a></div>
+  </div>
+</main>
+<footer><div class="wrap">
+  <span>Nascolor Sagl · Bellinzona · <a href="tel:+41798901135">079 890 11 35</a> · <span class="mono">CHE-352.225.737</span></span>
+  <span>Ticino e tutta la Svizzera · <a href="/resine-bagni-ticino.html">Resine per bagni e pavimenti</a> · <a href="/amministrazioni-condomini.html">Per amministrazioni immobiliari</a></span>
+  <span><a href="/privacy.html">Privacy</a> · <a href="/de/" lang="de">Deutsch</a> · Sito realizzato da Siteelite</span>
+</div></footer>
+<div class="mbar"><a class="btn btn-ghost ic" href="tel:+41798901135" aria-label="Chiama"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg></a><a class="btn btn-wa ic" href="https://wa.me/41798901135" target="_blank" rel="noopener" aria-label="WhatsApp"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6a2.5 2.5 0 0 0 1.7-1.2 2 2 0 0 0 .1-1.2c-.1-.1-.2-.1-.4-.2z"/></svg></a><a class="btn btn-accent" href="/#richiesta">Sopralluogo</a></div>
+<script>(function(){var b=document.querySelector('.mbtn'),p=document.getElementById('mpanel');if(!b||!p)return;function set(o){b.setAttribute('aria-expanded',o);p.hidden=!o;b.querySelector('.mlbl').textContent=o?b.dataset.close:b.dataset.open;}b.addEventListener('click',function(){set(p.hidden)});p.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});})();</script>
+<script>
+/* LAVORI: per aggiungere un cantiere copia un blocco { ... } e cambia testi e foto.
+   Foto: metti i file nella cartella /lavori/ (es. /lavori/giubiasco-prima.jpg). */
+var DEMO = true; // metti false quando ci sono le foto vere
+var LAVORI = [
+  { titolo:"Facciata di palazzina", luogo:"Esempio", tipo:"Facciate",
+    prima:"https://images.unsplash.com/photo-1691243925560-0f1125416bc4?auto=format&fit=crop&w=1200&q=70",
+    dopo:"https://images.unsplash.com/photo-1691243925560-0f1125416bc4?auto=format&fit=crop&w=1200&q=70",
+    testo:"Pulizia, riparazione dell'intonaco e due mani di pittura per esterni." },
+  { titolo:"Bagno in resina", luogo:"Esempio", tipo:"Resine",
+    prima:"https://images.unsplash.com/photo-1650894622076-e09ab837c502?auto=format&fit=crop&w=1200&q=70",
+    dopo:"https://images.unsplash.com/photo-1650894622076-e09ab837c502?auto=format&fit=crop&w=1200&q=70",
+    testo:"Resina continua su pavimento e pareti, senza fughe." },
+  { titolo:"Soggiorno", luogo:"Esempio", tipo:"Pittura interna",
+    prima:"https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1200&q=70",
+    dopo:"https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1200&q=70",
+    testo:"Stuccatura, carteggiatura e pittura di pareti e soffitti." },
+  { titolo:"Parete in cartongesso", luogo:"Esempio", tipo:"Cartongesso",
+    prima:"https://images.unsplash.com/photo-1718816281207-3b253cff549a?auto=format&fit=crop&w=1200&q=70",
+    dopo:"https://images.unsplash.com/photo-1718816281207-3b253cff549a?auto=format&fit=crop&w=1200&q=70",
+    testo:"Nuova parete divisoria con isolazione acustica, rasata e pitturata." }
+];
+(function(){
+  var box = document.getElementById('works'); if (!DEMO) document.getElementById('demo').remove();
+  LAVORI.forEach(function(l){
+    var d = document.createElement('article'); d.className = 'work';
+    d.innerHTML = '<div class="ba" style="--x:50%"><img src="'+l.dopo+'" alt="Dopo: '+l.titolo+'" loading="lazy">'+
+      '<img class="before" src="'+l.prima+'" alt="Prima: '+l.titolo+'" loading="lazy"'+(DEMO?' style="filter:grayscale(1) brightness(.7) contrast(.9)"':'')+'>'+
+      '<span class="tag b">Prima</span><span class="tag a">Dopo</span><span class="line"></span><span class="knob" aria-hidden="true">↔</span>'+
+      '<input type="range" min="0" max="100" value="50" aria-label="Confronta prima e dopo"></div>'+
+      '<div class="txt"><h3></h3><div class="meta"></div><p></p></div>';
+    d.querySelector('h3').textContent = l.titolo;
+    d.querySelector('.meta').textContent = l.tipo + ' · ' + l.luogo;
+    d.querySelector('p').textContent = l.testo;
+    var ba = d.querySelector('.ba');
+    d.querySelector('input').addEventListener('input', function(e){ ba.style.setProperty('--x', e.target.value + '%'); });
+    box.appendChild(d);
+  });
+})();
+</script>
+</body>
+</html>
