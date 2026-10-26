@@ -1,6 +1,9 @@
 /* Prepara le richieste del sito per la mail di Nascolor:
    oggetto leggibile, link WhatsApp/chiamata verso il cliente, conferma automatica al cliente. */
 window.NC = (function(){
+  // Indirizzo del gestionale «Nascolor Cantieri»: quando è online, ogni richiesta arriva anche lì.
+  var GESTIONALE = "";
+
   var T = {
     it: {
       wa: function(n,t,l){ return "Buongiorno " + n + ", sono Naser di Nascolor Sagl. Ho ricevuto la sua richiesta" + (t ? " per " + t.toLowerCase() : "") + (l ? " a " + l : "") + ". Quando le andrebbe bene il sopralluogo?"; },
@@ -37,6 +40,12 @@ window.NC = (function(){
 
   function prep(form, lang, kind){
     var t = T[lang] || T.it;
+    if (GESTIONALE) {
+      try {
+        var g = new FormData(form); g.append("lingua", lang);
+        fetch(GESTIONALE.replace(/\/$/, "") + "/api/richiesta", { method: "POST", body: g, mode: "cors" }).catch(function(){});
+      } catch (e) {}
+    }
     var nome = val(form, "nome"), tel = val(form, "tel"), tipo = val(form, "tipo"),
         loc = val(form, "loc"), email = val(form, "email");
     var LBL = {tipo:"Lavoro", quando:"Quando", sopralluogo:"Sopralluogo preferito", nome:"Nome", tel:"Telefono", loc:"Località", msg:"Dettagli"};
