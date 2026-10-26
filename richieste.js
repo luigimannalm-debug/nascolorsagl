@@ -2,7 +2,7 @@
    oggetto leggibile, link WhatsApp/chiamata verso il cliente, conferma automatica al cliente. */
 window.NC = (function(){
   // Indirizzo del gestionale «Nascolor Cantieri»: quando è online, ogni richiesta arriva anche lì.
-  var GESTIONALE = "";
+  var GESTIONALE = "https://nascolor-cantieri.vercel.app";
 
   var T = {
     it: {
